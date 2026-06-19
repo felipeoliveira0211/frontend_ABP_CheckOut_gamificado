@@ -1,0 +1,6 @@
+{
+  "name": "Falkon Geek Shop",
+  "description": "Uma experiência gamificada de e-commerce geek para a Falkon, com carrinho de compras, roleta de descontos e validação de cupons em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
