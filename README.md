@@ -1,12 +1,12 @@
-# Falkon Geek Shop - Arquitetura, Decisões de Engenharia e Impacto de Negócio
+# Falkon Geek Shop - Arquitetura e Impacto de Negócio
 
-Este documento apresenta as justificativas arquiteturais, as vantagens operacionais e os detalhes de implementação das tecnologias modernas de desenvolvimento de software adotadas no Falkon Geek Shop, focando em **React Router**, **Custom Hooks** e **Componentização avançada** utilizando JavaScript puro (ES6+ / React JSX) em vez de uma abordagem de código monolítico (espaguete).
+Este documento apresenta as justificativas, e as vantagens operacionais bem como os detalhes de implementação das tecnologias modernas de desenvolvimento de software adotadas no Falkon Geek Shop, focando em **React Router**, **Custom Hooks** e **Componentização avançada** utilizando JavaScript  em vez de uma abordagem de código (espaguete).
 
 ---
 
 ## 1. Por que usamos Custom Hooks e Componentes em vez de Código Espaguete?
 
-O desenvolvimento de aplicações web modernas exige que as interfaces sejam fáceis de entender, alterar e escalar. Centralizar toda a lógica de estado, cálculos complexos de desconto e renderização visual em um único arquivo (como o antigo `App.jsx` ou arquivos principais monolíticos) gera o chamado **"código espaguete"**, que traz graves riscos e ineficiências.
+O desenvolvimento de aplicações web modernas exigem que as interfaces sejam de facil entendimento e manipulação. Centralizar toda a lógica de estado, cálculos complexos de desconto e renderização visual em um único arquivo gera o chamado **"código espaguete"**, que traz graves riscos e ineficiências.
 
 Nós decidimos separar estritamente a **Regra de Negócio** (Lógica) da **Apresentação Visual** (Interface de Usuário) por meio de três pilares:
 1. **Contexto Reativo e Compartilhado** (`CartContext.jsx`)
